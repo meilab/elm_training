@@ -1,0 +1,225 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    margin: 15px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    color: #111111;
+}
+
+.meilabLayout {
+    display: flex;
+    flex-direction: column;
+}
+
+.meilabContainer {
+    display: flex;
+}
+
+.meilabContentContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.meilabHomePageHero, .meilabPostHero {
+    color: #FFFFFF;
+    width: 100%;
+    background-color: #222;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.meilabHomePageHero {
+    height: 100vh;
+}
+
+.meilabPostHero {
+    height: 60vh;
+}
+
+.meilabMenuContainer, .meilabMenuContainerVertical {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meilabMenuContainerVertical {
+    flex-direction: column;
+}
+
+.meilabSideBarWrapper {
+    flex: 0 0 150px;
+}
+
+.meilabSideBarWrapper.meilabMenuInActive {
+    display: none;
+}
+
+.meilabSideBarMenu {
+    position: fixed;
+    width: 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(164, 0, 48, 0.5);
+}
+
+.meilabMenuList, .meilabMenuListVertical, .meilabHeaderMenuList {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.meilabMenuListVertical {
+    flex-direction: column;
+}
+
+.meilabHeaderMenuList {
+    display: block;
+}
+
+.meilabMenuItem {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.meilabMenuToggler {
+    position: absolute;
+    color: #FFFFFF;
+    padding: 5px;
+    left: 20px;
+    top: 20px;
+    border: 1px solid #dddddd;
+}
+
+.meilabMenuToggler.meilabMenuActive {
+    left: 170px;
+}
+
+.meilabMenuToggler:hover {
+    background-color: #FFFFFF;
+    color: #111111;
+}
+
+.meilabMenuToggler  li {
+    list-style-type: none;
+}
+
+.meilabSpacing {
+    padding: 50px 0;
+}
+
+@media screen and (max-width : 48em) {
+        .meilabHomePageHero {
+    height: 60vh;
+    min-height: 240px;
+    padding: 15% 0;
+}
+}
+
+.meilabFooter, .meilabHeader {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.meilabHeader {
+    background-color: #FFFFFF;
+    flex: 0 0 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.meilabFooter {
+    background-color: #134374;
+    background-color: #FFFFFF;
+    color: #AAAAAA;
+    padding: 3em 10%;
+    text-align: center;
+    flex: 0 0 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.meilabCopyRight {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.meilabGithubIframe {
+    border: 0;
+}
+
+.meilabBlogPost {
+    max-width: 759px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meilabTagContainer {
+    display: flex;
+}
+
+.meilabTagItem {
+    flex: 1;
+    border: 1px solid #dddddd;
+    margin: 0.3em;
+    padding: 0.3em;
+}
