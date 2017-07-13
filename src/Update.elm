@@ -62,12 +62,14 @@ update msg model =
                 newRoute =
                     parseLocation location model.url.base_url
             in
-                changeUrlProcedure
+                Debug.log (toString (newRoute))
+                    changeUrlProcedure
                     model
                     newRoute
 
         NewUrl url ->
-            model
+            Debug.log (url)
+                model
                 ! [ Cmd.batch
                         [ (Navigation.newUrl url)
                         , cmd (HideSideMenu)

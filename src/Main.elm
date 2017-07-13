@@ -44,5 +44,7 @@ init location =
         url =
             { base_url = base_url }
     in
-        changeUrlProcedure (initialModel currentRoute url)
+        Debug.log (base_url)
+            changeUrlProcedure
+            (initialModel currentRoute url)
             currentRoute
